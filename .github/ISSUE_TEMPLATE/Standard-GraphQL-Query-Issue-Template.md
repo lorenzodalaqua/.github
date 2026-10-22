@@ -1,16 +1,19 @@
 ---
-name: Manage Migration - GraphQL Query
-about: Adds or updates a GraphQL query that a Manage page needs for its migration to Manage Angular
-title: "[api.analytecare.com] GraphQL query for < MODEL > and its relationships for the < PAGE > page"
+name: GraphQL Query Issue
+about: Adds or changes a GraphQL query in api.analytecare.com
+title: "[api.analytecare.com] GraphQL query for < MODEL > and its relationships"
 labels: GraphQL
 ---
 
 # Story
-<!-- Procedure: https://github.com/Medology/Team-Standards-and-Procedures/blob/master/procedures/manage-angular/migrating-a-page.md -->
 
 ## Short Summary
-We are migrating the < PAGE > page to Manage Angular ([investigation](< INVESTIGATION LINK >)).
-This issue makes sure that a GraphQL query for < MODEL > exists, with the relationships that the page needs.
+< CONTEXT >
+This issue makes sure that a GraphQL query for < MODEL > exists, with the relationships that < CLIENT > needs.
+<!--
+CONTEXT: one sentence about why we need the query, e.g. "We are migrating the Reviews page to Manage Angular."
+CLIENT: the page or feature that uses the query.
+-->
 
 ## Acceptance Criteria
 - [ ] The < MODEL > query follows [LAR1032], [LAR1033] and [LAR1034].
@@ -27,7 +30,10 @@ Chekote, lorenzodalaqua - GraphQL standards
 
 ## Notes
 If a legacy query conflicts with a standard, coordinate with the leads.
-<!-- Add other information that is specific to this query. -->
+<!--
+Link the investigation or Epic, if there is one.
+Add other information that is specific to this query.
+-->
 
 ## Applicable Standards, Conventions, etc
 [LAR1032], [LAR1033], [LAR1034], [LAR1035], [LAR1036], [TST1002]
@@ -40,12 +46,16 @@ If a legacy query conflicts with a standard, coordinate with the leads.
 [TST1002]: https://github.com/Medology/Team-Standards-and-Procedures/blob/master/standards/testing/TST1002-behat-graphql-feature-files.md
 
 ## Exploratory Testing
-None. The front end does not use this query yet.
+< EXPLORATORY TESTING >
+<!--
+If no client uses the query yet, write "None. No client uses this query yet."
+Otherwise, list the projects and features that use it, e.g. "www.analytecare.com - Manage Angular - Reviews".
+-->
 
 ## Announcement Message
 releasenotes: N/A
 
 dev-updates:
-A GraphQL query for < MODEL > and its relationships is available. We added it to migrate the < PAGE > page to
-Manage Angular. You can also use it for other tasks.
+A GraphQL query for < MODEL > and its relationships is available. We added it to < REASON >.
+You can also use it for other tasks.
 < LINK TO PR GOES HERE >
